@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "BEF5C5D8-5243-4AFC-89AE-B0597551D6BE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "PageLoader",
+          "name" : "PageLoader"
+        },
+        {
+          "containerPath" : "container:",
+          "identifier" : "RxPageLoader",
+          "name" : "RxPageLoader"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "PageLoaderTests",
+        "name" : "PageLoaderTests"
+      }
+    }
+  ],
+  "version" : 1
+}
