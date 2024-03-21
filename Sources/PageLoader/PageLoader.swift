@@ -22,6 +22,10 @@ public class PageLoader<Item> {
     }
     public var pageLoaded: ((Int, Result<PageInfo<Item>, Error>) -> Void)?
     
+    deinit {
+        cancel()
+    }
+    
     public init(dataProvider: any PageDataProvider<Item>) {
         self.dataProvider = dataProvider
     }
